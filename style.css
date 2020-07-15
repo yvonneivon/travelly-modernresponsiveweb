@@ -13,6 +13,10 @@ h1 {
     font-size: 2rem;
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 li,
 button,
 label,
@@ -26,9 +30,89 @@ h2 {
 
 h3 {
     font-size: 3rem;
+    font-weight: 300;
 }
 
 h4,
 h5 {
     font-size: 2.8rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+button {
+    padding: 2rem 6rem;
+    background: #4c6e97;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Nav Section with HERO */
+.main-head {
+    background-color: black;
+    color: white;
+}
+
+nav {
+    min-height: 10vh;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+#logo {
+    flex: 2 1 40rem;
+    font-family: 'Pattaya', sans-serif;
+    font-weight: 400;
+}
+
+.hero {
+    min-height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), transparent), url("./assets/img/landing-page.jpg");
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h3 {
+    padding: 5rem;
+}
+
+@media screen and (max-width: 932px) {
+
+    html {
+        font-size: 40%;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    #logo {
+        padding: 2rem;
+    }
 }
