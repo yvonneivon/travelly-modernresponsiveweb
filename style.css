@@ -1,198 +1,244 @@
 /* GLOBAL STYLES */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
+	font-size: 62.5%;
 }
 
 h1 {
-    font-size: 2rem;
+	font-size: 2rem;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
 li,
 button,
 label,
 p {
-    font-size: 2rem;
+	font-size: 2rem;
 }
 
 h2 {
-    font-size: 4.8rem;
-    font-weight: 400;
+	font-size: 4.8rem;
+	font-weight: 400;
 }
 
 h3 {
-    font-size: 3rem;
-    font-weight: 300;
+	font-size: 3rem;
+	font-weight: 300;
 }
 
 h4,
 h5 {
-    font-size: 2.8rem;
+	font-size: 2.8rem;
 }
 
 a {
-    color: white;
-    text-decoration: none;
+	color: white;
+	text-decoration: none;
 }
 
 button {
-    padding: 2rem 6rem;
-    background: #4c6e97;
-    border: none;
-    color: white;
-    font-size: 1.8rem;
-    cursor: pointer;
-    transition: background 0.3s ease-in-out 0.1s;
-    border-radius: 0.5rem;
-    font-family: 'Poppins', sans-serif;
+	padding: 2rem 6rem;
+	background: #4c6e97;
+	border: none;
+	color: white;
+	font-size: 1.8rem;
+	cursor: pointer;
+	transition: background 0.3s ease-in-out 0.1s;
+	border-radius: 0.5rem;
+	font-family: 'Poppins', sans-serif;
 }
 
 button:hover {
-    background: #3e5879;
+	background: #3e5879;
 }
 
 /* Nav Section with HERO */
 .main-head {
-    background-color: #131c27;
-    color: white;
+	background-color: #131c27;
+	color: white;
 }
 
 nav {
-    min-height: 10vh;
-    display: flex;
-    width: 90%;
-    margin: auto;
-    padding: 2rem;
-    align-items: center;
-    flex-wrap: wrap;
+	min-height: 10vh;
+	display: flex;
+	width: 90%;
+	margin: auto;
+	padding: 2rem;
+	align-items: center;
+	flex-wrap: wrap;
 }
 
 nav ul {
-    display: flex;
-    flex: 1 1 40rem;
-    justify-content: space-around;
-    align-items: center;
-    list-style: none;
+	display: flex;
+	flex: 1 1 40rem;
+	justify-content: space-around;
+	align-items: center;
+	list-style: none;
 }
 
 #logo {
-    flex: 2 1 40rem;
-    font-family: 'Pattaya', sans-serif;
-    font-weight: 400;
+	flex: 2 1 40rem;
+	font-family: 'Pattaya', sans-serif;
+	font-weight: 400;
 }
 
 .hero {
-    min-height: 90vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), transparent), url("./assets/img/landing-page.jpg");
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+	min-height: 90vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), transparent), url("./assets/img/landing-page.jpg");
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 }
 
 .hero h3 {
-    padding: 5rem;
+	padding: 5rem;
 }
 
 /* Locations Section */
 #locations {
-    min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), transparent), url("./assets/img/new-york-page.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
+	min-height: 100vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), transparent), url("./assets/img/new-york-page.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
 }
 
 .locations-head {
-    width: 90%;
-    margin: auto;
+	width: 90%;
+	margin: auto;
 }
 
 .locations-head h2 {
-    padding: 1rem 2rem;
+	padding: 1rem 2rem;
 }
 
 .locations-head h3 {
-    padding: 4rem 2rem;
+	padding: 4rem 2rem;
 }
 
 .cloud {
-    position: absolute;
-    top: 0%;
-    right: 0%;
-    pointer-events: none;
-    width: 720px;
+	position: absolute;
+	top: 0%;
+	right: 0%;
+	pointer-events: none;
+	width: 720px;
 }
 
 .moving-cloud-1 {
-    animation: cloudAnimation 3s infinite alternate ease-in-out;
+	animation: cloudAnimation 3s infinite alternate ease-in-out;
 }
 
 .moving-cloud-2 {
-    top: 5%;
-    z-index: -1;
-    opacity: 0.5;
-    animation: cloudAnimation 3.5s infinite alternate ease-in-out;
+	top: 5%;
+	z-index: -1;
+	opacity: 0.5;
+	animation: cloudAnimation 3.5s infinite alternate ease-in-out;
 }
 
 @keyframes cloudAnimation {
-    from {
-        transform: translate(10%, -10%);
-    }
+	from {
+		transform: translate(10%, -10%);
+	}
 
-    to {
-        transform: translate(0%, 0%);
-    }
+	to {
+		transform: translate(0%, 0%);
+	}
+}
+
+/* Benefits Section */
+.benefits-head {
+	background: #343c44;
+	padding: 3rem;
+	min-height: 30vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	text-align: center;
+}
+
+.benefits-head h3 {
+	padding: 1rem;
+}
+
+.cards {
+	width: 90%;
+	margin: auto;
+	display: flex;
+	min-height: 70vh;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.card {
+	flex: 1 1 25rem;
+	min-height: 40vh;
+	margin: 2rem 5rem;
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+	text-align: center;
+}
+
+.cards img {
+	max-width: 15%;
+	margin: 2rem;
+}
+
+.card h4,
+.card p {
+	padding: 1rem;
+}
+
+.card-icon {
+	background: #4c6e97;
 }
 
 /* Media Query */
 @media screen and (max-width: 932px) {
+	html {
+		font-size: 40%;
+	}
 
-    html {
-        font-size: 40%;
-    }
+	nav {
+		text-align: center;
+	}
 
-    nav {
-        text-align: center;
-    }
+	#logo {
+		padding: 2rem;
+	}
 
-    #logo {
-        padding: 2rem;
-    }
+	.cloud {
+		height: 50rem;
+	}
 
-    .cloud {
-        height: 50rem;
-    }
+	.moving-cloud-1 {
+		z-index: -1;
+	}
 
-    .moving-cloud-1 {
-        z-index: -1;
-    }
+	.moving-cloud-2 {
+		z-index: -2;
+	}
 
-    .moving-cloud-2 {
-        z-index: -2;
-    }
-
-    .locations-head h3 {
-        background: rgba(19, 28, 39, 0.8);
-        color: white;
-    }
-
+	.locations-head h3 {
+		background: rgba(19, 28, 39, 0.8);
+		color: white;
+	}
 }
