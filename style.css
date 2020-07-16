@@ -97,7 +97,7 @@ nav ul {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	background: linear-gradient(rgba(0, 0, 0, 0.4), transparent), url("./assets/img/landing-page.jpg");
+	background: linear-gradient(rgba(0, 0, 0, 0.9), transparent), url("./assets/img/landing-page.jpg");
 	color: white;
 	display: flex;
 	flex-direction: column;
@@ -117,7 +117,7 @@ nav ul {
 /* Locations Section */
 #locations {
 	min-height: 100vh;
-	background: linear-gradient(rgba(0, 0, 0, 0.4), transparent), url("./assets/img/new-york-page.png");
+	background: linear-gradient(rgba(0, 0, 0, 0.2), transparent), url("./assets/img/new-york-page.png");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -292,6 +292,10 @@ footer h5 {
 	list-style: none;
 	justify-content: space-between;
 	display: flex;
+}
+
+button:focus {
+	background: #2f425c;
 }
 
 /* Media Query */
