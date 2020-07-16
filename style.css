@@ -61,8 +61,11 @@ button:hover {
 
 /* Nav Section with HERO */
 .main-head {
-	background-color: #131c27;
 	color: white;
+	background-color: #131c27;
+	position: sticky;
+	top: 0rem;
+	z-index: 3;
 }
 
 nav {
@@ -331,5 +334,9 @@ footer h5 {
 
 	.form-wrapper {
 		width: 100%;
+	}
+
+	#logo {
+		justify-content: center;
 	}
 }
