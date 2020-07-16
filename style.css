@@ -52,7 +52,6 @@ button {
 	font-size: 1.8rem;
 	cursor: pointer;
 	transition: background 0.3s ease-in-out 0.1s;
-	border-radius: 0.5rem;
 	font-family: 'Poppins', sans-serif;
 }
 
@@ -102,6 +101,10 @@ nav ul {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+}
+
+.hero button {
+	border-radius: 1rem;
 }
 
 .hero h3 {
@@ -211,6 +214,83 @@ nav ul {
 	background: #4c6e97;
 }
 
+#contact {
+	min-height: 100vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), transparent), url(./assets/img/contact-mountain.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.form-wrapper {
+	background: rgba(19, 28, 39, 0.8);
+	width: 60%;
+	color: white;
+	border-radius: 2rem;
+}
+
+.form-head {
+	text-align: center;
+	padding: 4rem;
+}
+
+.name-form,
+.email-form {
+	padding: 3rem;
+	text-align: center;
+}
+
+.form-wrapper label {
+	margin: 0rem 3rem;
+}
+
+.form-wrapper button {
+	width: 100%;
+	padding: 2rem;
+	margin-top: 8rem;
+	border-bottom-left-radius: 2rem;
+	border-bottom-right-radius: 2rem;
+}
+
+.form-wrapper input {
+	padding: 1rem 3rem;
+	border-radius: 1rem;
+}
+
+footer {
+	color: white;
+	background-color: #131c27;
+}
+
+.footer-wrapper {
+	display: flex;
+	padding: 2rem;
+	width: 90%;
+	margin: auto;
+	align-items: center;
+	min-height: 10vh;
+	flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+footer ul {
+	display: flex;
+	list-style: none;
+	flex: 1 1 40rem;
+	justify-content: space-between;
+}
+
+footer h5 {
+	flex: 1 1 40rem;
+	align-items: center;
+	list-style: none;
+	justify-content: space-between;
+	display: flex;
+}
+
 /* Media Query */
 @media screen and (max-width: 932px) {
 	html {
@@ -240,5 +320,16 @@ nav ul {
 	.locations-head h3 {
 		background: rgba(19, 28, 39, 0.8);
 		color: white;
+	}
+	footer {
+		text-align: center;
+	}
+
+	footer h5 {
+		padding-bottom: 3rem;
+	}
+
+	.form-wrapper {
+		width: 100%;
 	}
 }
